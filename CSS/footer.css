@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+}
+
+.a-footer {
+    color: black;
+    width: fit-content;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+
+.a-footer {
+    margin-bottom: 3em;
+}
+}
+
+@media screen and (min-width: 1024px){
+    
+footer {
+    height: fit-content;
+    text-align: center;
+    margin-left: 20%;
+}
+
+footer a i {
+    margin-right: 5px;
+}
+
+.a-footer {
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.a-footer:hover {
+    background-color: blueviolet;
+}
+}

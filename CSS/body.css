@@ -1,0 +1,313 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/fondo-minimalista.jpg);
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media screen  and (max-width: 767px) {
+    
+h1,h2,h3 {
+    margin: 0;
+}
+
+h4 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#titulo-matias {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#subtitulo {
+    text-align: center;
+    margin-top: 0;
+    font-size: 3.2vw;
+    background-color: none;
+}
+
+.principal {
+    font-family: 'Source Code Pro';
+    color: rgb(199, 199, 199);
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    background-color: rgb(35, 4, 41);
+    padding: 10px 2px 5px 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.imagen {
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 25%;
+    transition: 0.3s;
+    margin-top: 2vh;
+}
+
+.foto-del-Matt {
+    max-width: 50vw;
+    position: absolute;
+    top: -85px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    gap:  10px;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    a {
+        width: 12vw;
+        height: 12vw;
+        text-align: center;
+        i {
+            font-size: 7vw;
+        }
+    }
+}
+
+.contacto-main {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: blueviolet;
+    border-radius: 1vw;
+    text-align: center;
+    margin-left: 35%;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    .foto-del-Matt {
+        max-width: 50vw;
+        position: absolute;
+        top: -70px;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.foto-del-Matt {
+    max-width: 50vw;
+}
+    
+.principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1rem 8rem;
+    grid-template-areas:
+    "titulo-main"
+    "sub-titulo"
+    "contenido" ;
+    text-align: center;
+    background-color: rgb(44, 17, 70);
+    color: #ebebeb;
+    border-radius: 2em;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+} 
+
+#titulo-matias {
+    grid-area: titulo-main;
+}
+
+#subtitulo {
+    grid-area: sub-titulo;
+    margin-top: 0px;
+}
+
+#contenido {
+    grid-area: contenido;
+    margin-left: 2em ;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.imagen {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 2em;
+}
+
+.foto-del-Matt {
+    max-width: 400px;
+    position: absolute;
+    top: -160px;
+    left: 0px;
+    object-fit: cover;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    gap:  10px;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    a {
+        width: 12vw;
+        height: 12vw;
+        text-align: center;
+        i {
+            font-size: 7vw;
+        }
+    }
+}
+
+.contacto-main {
+    margin-left: 43.5%;
+    padding: 1em;
+    background-color: blueviolet;
+    border-radius: 1em;
+}
+
+}
+@media screen and (min-width: 1024px){
+
+.logo:hover {
+    align-items: center;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 20%;
+    grid-area: imagen;
+    transition: 0.3s;
+}
+
+.imagen:hover {
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+
+    .foto-del-Matt {
+        top: -165px;
+    }
+}
+
+.foto-del-Matt {
+    max-width: 300px;
+    position: absolute;
+    top: -110px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.foto-del-Matt:hover {
+    max-width: 400px;
+    width: 400px;
+}
+
+main {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 15vw 1fr 1fr;
+    grid-template-rows: 30vh 15vh;
+    min-height: 50vh;
+    grid-template-areas: 
+    "aside principal imagen"
+    "aside contacto .";
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    grid-area: aside;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside a:hover {
+    color: blueviolet;
+}
+
+aside a {
+    font-size: 30px;
+    color: black;
+    align-items: center;
+    padding: 5%;
+    transition: 0.3s;
+
+}
+
+#titulo-matias {
+    font-size: 3.2vh;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.principal {
+    grid-area: principal;
+    font-family: 'Source Code Pro';
+    gap: 1vh;
+    transition: 0.3s;
+}
+
+.principal:hover {
+    color: white;
+    background-color:#271D31;
+    border-radius: 30px;
+    font-size: 2.1vh;
+    .nombre {
+        text-decoration: underline;
+    }
+}
+
+.contacto-main {
+    font-family: "Source Code Pro";
+    font-size: 15px;
+    color: black;
+    grid-area: contacto;
+    margin: 30px 0px 0px 20px;
+    padding: 2vh 2vw 2vh 2vw;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;
+    background-color: rgb(84, 35, 131);
+    border-radius: 8px;
+}
+
+.contacto-main:hover {
+    background-color: rgb(20, 1, 26);
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/logo.png" alt="Matías-logo" class="logo" id="logo"></a>
+        <ul>
+            <a href="./index.html"><li>Home</li></a>
+        </ul>    
+    </header>
+    <form action="formulario-de-contacto" method="get">
+        <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+        <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+        <label for="razon">Razón de contacto </label>
+            <textarea name="razon" id="razon" rows="5" required placeholder="Texto"></textarea>
+        <label for="imagen">Inserte imagen (opcional)</label>
+            <input type="file" accept="image" id="imagen">
+        <input type="submit" class="boton-sub-res">
+        <input type="reset" class="boton-sub-res">
+    </form>
+    
+</body>
+</html>l
